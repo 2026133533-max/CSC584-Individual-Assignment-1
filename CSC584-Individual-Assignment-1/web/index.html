@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Form - CSC584</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Personal Profile</h2>
+        <p class="subtitle">Please fill in your details below</p>
+        
+        <form action="ProfileServlet" method="post">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="e.g., Ali bin Abu" required>
+            </div>
+
+            <div class="form-group">
+                <label for="studentId">Student ID:</label>
+                <input type="text" id="studentId" name="studentId" placeholder="e.g., 2024123456" required>
+            </div>
+
+            <div class="form-group">
+                <label for="programme">Programme:</label>
+                <input type="text" id="programme" name="programme" placeholder="e.g., CS230 - Bachelor of Computer Science" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="e.g., 2024123456@student.uitm.edu.my" required>
+            </div>
+
+            <div class="form-group">
+                <label for="hobbies">Hobbies:</label>
+                <input type="text" id="hobbies" name="hobbies" placeholder="e.g., Coding, Reading, Hiking" required>
+            </div>
+
+            <div class="form-group">
+                <label for="intro">Short Self-Introduction:</label>
+                <textarea id="intro" name="intro" rows="4" placeholder="Tell us a little bit about yourself..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit Profile</button>
+        </form>
+    </div>
+</body>
+</html>
